@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="19D76" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Customer" representedClassName="Customer" syncable="YES" codeGenerationType="class">
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="identifier" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="password" optional="YES" attributeType="String"/>
+        <attribute name="username" optional="YES" attributeType="String"/>
+        <relationship name="currentLocation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Location" inverseName="customer" inverseEntity="Location"/>
+        <relationship name="favoriteTrucks" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Truck" inverseName="customer" inverseEntity="Truck"/>
+    </entity>
+    <entity name="CustomerRating" representedClassName="CustomerRating" syncable="YES" codeGenerationType="class">
+        <attribute name="comments" optional="YES" attributeType="String"/>
+        <attribute name="customerRating" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="menuItem" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MenuItem" inverseName="consumerRating" inverseEntity="MenuItem"/>
+        <relationship name="rating" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Truck" inverseName="custRating" inverseEntity="Truck"/>
+    </entity>
+    <entity name="GrubFood" representedClassName="GrubFood" syncable="YES" codeGenerationType="class">
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="identifier" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="password" optional="YES" attributeType="String"/>
+        <attribute name="username" optional="YES" attributeType="String"/>
+        <relationship name="truckOwner" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Truck" inverseName="grubFood" inverseEntity="Truck"/>
+    </entity>
+    <entity name="Location" representedClassName="Location" syncable="YES" codeGenerationType="class">
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="customer" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Customer" inverseName="currentLocation" inverseEntity="Customer"/>
+        <relationship name="location" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Truck" inverseName="location" inverseEntity="Truck"/>
+    </entity>
+    <entity name="MenuItem" representedClassName="MenuItem" syncable="YES" codeGenerationType="class">
+        <attribute name="customerRating" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="itemDescription" optional="YES" attributeType="String"/>
+        <attribute name="itemName" optional="YES" attributeType="String"/>
+        <attribute name="itemPrice" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="consumerRating" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CustomerRating" inverseName="menuItem" inverseEntity="CustomerRating"/>
+        <relationship name="itemPhotos" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MenuPhoto" inverseName="menuItems" inverseEntity="MenuPhoto"/>
+    </entity>
+    <entity name="MenuPhoto" representedClassName="MenuPhoto" syncable="YES" codeGenerationType="class">
+        <attribute name="photoURL" optional="YES" attributeType="String"/>
+        <relationship name="menuItems" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MenuItem" inverseName="itemPhotos" inverseEntity="MenuItem"/>
+    </entity>
+    <entity name="Truck" representedClassName="Truck" syncable="YES" codeGenerationType="class">
+        <attribute name="customerRating" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="identifier" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="imageOfTruck" optional="YES" attributeType="String"/>
+        <attribute name="truckName" optional="YES" attributeType="String"/>
+        <relationship name="customer" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Customer" inverseName="favoriteTrucks" inverseEntity="Customer"/>
+        <relationship name="custRating" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CustomerRating" inverseName="rating" inverseEntity="CustomerRating"/>
+        <relationship name="grubFood" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GrubFood" inverseName="truckOwner" inverseEntity="GrubFood"/>
+        <relationship name="location" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Location" inverseName="location" inverseEntity="Location"/>
+    </entity>
+    <elements>
+        <element name="Customer" positionX="146.02734375" positionY="-403.26171875" width="128" height="133"/>
+        <element name="CustomerRating" positionX="-240.4765625" positionY="-167.44140625" width="128" height="103"/>
+        <element name="Location" positionX="24.6171875" positionY="89.33984375" width="128" height="103"/>
+        <element name="MenuItem" positionX="-457.66015625" positionY="2.28515625" width="128" height="133"/>
+        <element name="MenuPhoto" positionX="-678.515625" positionY="-153.4296875" width="128" height="73"/>
+        <element name="Truck" positionX="-694.3125" positionY="-417.9453125" width="128" height="163"/>
+        <element name="GrubFood" positionX="-459" positionY="-234" width="128" height="118"/>
+    </elements>
+</model>

@@ -1,0 +1,516 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F5EF9572415D00C000049FC /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5EF9562415D00C000049FC /* Token.swift */; };
+		1F5EF9592415D294000049FC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5EF9582415D294000049FC /* User.swift */; };
+		3E26A1CC240E261D00524321 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E26A1CB240E261D00524321 /* CoreDataStack.swift */; };
+		3E26A1CE240E26B900524321 /* GrubFood+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E26A1CD240E26B900524321 /* GrubFood+Convenience.swift */; };
+		3E26A1D0240E26CA00524321 /* CustomerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E26A1CF240E26CA00524321 /* CustomerController.swift */; };
+		3E26A1D2240E26DC00524321 /* TruckController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E26A1D1240E26DC00524321 /* TruckController.swift */; };
+		3E26A1D4240E26E100524321 /* GrubFoodController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E26A1D3240E26E100524321 /* GrubFoodController.swift */; };
+		3E26A1DA240E26F600524321 /* GrubFoodRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E26A1D6240E26F600524321 /* GrubFoodRepresentation.swift */; };
+		3E26A1DB240E26F600524321 /* TruckRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E26A1D7240E26F600524321 /* TruckRepresentation.swift */; };
+		3E26A1DC240E26F600524321 /* CustomerRatingsRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E26A1D8240E26F600524321 /* CustomerRatingsRepresentation.swift */; };
+		3E26A1DD240E26F600524321 /* CustomerRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E26A1D9240E26F600524321 /* CustomerRepresentation.swift */; };
+		3E43B28D240B11F90004A7BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E43B28C240B11F90004A7BF /* LaunchScreen.storyboard */; };
+		3E43B28F240B12350004A7BF /* signupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E43B28E240B12350004A7BF /* signupViewController.swift */; };
+		ABEA90AB2408946000535B74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEA90AA2408946000535B74 /* AppDelegate.swift */; };
+		ABEA90AD2408946000535B74 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEA90AC2408946000535B74 /* SceneDelegate.swift */; };
+		ABEA90AF2408946000535B74 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEA90AE2408946000535B74 /* LoginViewController.swift */; };
+		ABEA90B22408946000535B74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABEA90B02408946000535B74 /* Main.storyboard */; };
+		ABEA90B42408946D00535B74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABEA90B32408946D00535B74 /* Assets.xcassets */; };
+		ABEA90BF2408A69500535B74 /* Customer+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEA90BE2408A69500535B74 /* Customer+Convenience.swift */; };
+		ABEA90C12408C5F000535B74 /* Truck+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEA90C02408C5F000535B74 /* Truck+Convenience.swift */; };
+		ABEA90CB240AD79800535B74 /* FoodTruck TrackR.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ABEA90C9240AD79800535B74 /* FoodTruck TrackR.xcdatamodeld */; };
+		ABEA90CD240AEE3F00535B74 /* MenuItem+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEA90CC240AEE3F00535B74 /* MenuItem+Convenience.swift */; };
+		ABEA90CF240AEE6400535B74 /* CustomerRating+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEA90CE240AEE6400535B74 /* CustomerRating+Convenience.swift */; };
+		ABEA90D1240AEE8600535B74 /* MenuPhoto+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEA90D0240AEE8600535B74 /* MenuPhoto+Convenience.swift */; };
+		ABEA90E6240F5DFB00535B74 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = ABEA90E5240F5DFB00535B74 /* README.md */; };
+		ABEA90EA24107DCD00535B74 /* Location+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEA90E924107DCD00535B74 /* Location+Convenience.swift */; };
+		ABEA90EC24107EF000535B74 /* LocationRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEA90EB24107EF000535B74 /* LocationRepresentation.swift */; };
+		ABEA90EF2411D39600535B74 /* FoodType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEA90EE2411D39600535B74 /* FoodType.swift */; };
+		ABEA910B2414507300535B74 /* TruckTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEA910A2414507300535B74 /* TruckTableViewController.swift */; };
+		ABEA910D241450A200535B74 /* TruckDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEA910C241450A200535B74 /* TruckDetailViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1F5EF9562415D00C000049FC /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		1F5EF9582415D294000049FC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3E26A1CB240E261D00524321 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		3E26A1CD240E26B900524321 /* GrubFood+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GrubFood+Convenience.swift"; sourceTree = "<group>"; };
+		3E26A1CF240E26CA00524321 /* CustomerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerController.swift; sourceTree = "<group>"; };
+		3E26A1D1240E26DC00524321 /* TruckController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TruckController.swift; sourceTree = "<group>"; };
+		3E26A1D3240E26E100524321 /* GrubFoodController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrubFoodController.swift; sourceTree = "<group>"; };
+		3E26A1D6240E26F600524321 /* GrubFoodRepresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrubFoodRepresentation.swift; sourceTree = "<group>"; };
+		3E26A1D7240E26F600524321 /* TruckRepresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TruckRepresentation.swift; sourceTree = "<group>"; };
+		3E26A1D8240E26F600524321 /* CustomerRatingsRepresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerRatingsRepresentation.swift; sourceTree = "<group>"; };
+		3E26A1D9240E26F600524321 /* CustomerRepresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerRepresentation.swift; sourceTree = "<group>"; };
+		3E43B28C240B11F90004A7BF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3E43B28E240B12350004A7BF /* signupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signupViewController.swift; sourceTree = "<group>"; };
+		ABEA90A72408946000535B74 /* FoodTruck TrackR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FoodTruck TrackR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABEA90AA2408946000535B74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ABEA90AC2408946000535B74 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		ABEA90AE2408946000535B74 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		ABEA90B12408946000535B74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ABEA90B32408946D00535B74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ABEA90B82408946D00535B74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABEA90BE2408A69500535B74 /* Customer+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Customer+Convenience.swift"; sourceTree = "<group>"; };
+		ABEA90C02408C5F000535B74 /* Truck+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Truck+Convenience.swift"; sourceTree = "<group>"; };
+		ABEA90CA240AD79800535B74 /* FoodTruck TrackR.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "FoodTruck TrackR.xcdatamodel"; sourceTree = "<group>"; };
+		ABEA90CC240AEE3F00535B74 /* MenuItem+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuItem+Convenience.swift"; sourceTree = "<group>"; };
+		ABEA90CE240AEE6400535B74 /* CustomerRating+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomerRating+Convenience.swift"; sourceTree = "<group>"; };
+		ABEA90D0240AEE8600535B74 /* MenuPhoto+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuPhoto+Convenience.swift"; sourceTree = "<group>"; };
+		ABEA90E5240F5DFB00535B74 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		ABEA90E924107DCD00535B74 /* Location+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location+Convenience.swift"; sourceTree = "<group>"; };
+		ABEA90EB24107EF000535B74 /* LocationRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRepresentation.swift; sourceTree = "<group>"; };
+		ABEA90EE2411D39600535B74 /* FoodType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodType.swift; sourceTree = "<group>"; };
+		ABEA910A2414507300535B74 /* TruckTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruckTableViewController.swift; sourceTree = "<group>"; };
+		ABEA910C241450A200535B74 /* TruckDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruckDetailViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ABEA90A42408946000535B74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E26A1D5240E26F600524321 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3E26A1D6240E26F600524321 /* GrubFoodRepresentation.swift */,
+				3E26A1D7240E26F600524321 /* TruckRepresentation.swift */,
+				3E26A1D8240E26F600524321 /* CustomerRatingsRepresentation.swift */,
+				3E26A1D9240E26F600524321 /* CustomerRepresentation.swift */,
+				ABEA90EB24107EF000535B74 /* LocationRepresentation.swift */,
+				1F5EF9562415D00C000049FC /* Token.swift */,
+				1F5EF9582415D294000049FC /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ABEA909E2408946000535B74 = {
+			isa = PBXGroup;
+			children = (
+				ABEA90E5240F5DFB00535B74 /* README.md */,
+				ABEA90C8240AD75B00535B74 /* Storyboards */,
+				ABEA90A92408946000535B74 /* FoodTruck TrackR */,
+				ABEA90A82408946000535B74 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ABEA90A82408946000535B74 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ABEA90A72408946000535B74 /* FoodTruck TrackR.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ABEA90A92408946000535B74 /* FoodTruck TrackR */ = {
+			isa = PBXGroup;
+			children = (
+				ABEA90ED2411D38100535B74 /* Helpers */,
+				ABEA90C7240AD73800535B74 /* Resources */,
+				ABEA90C6240AD72900535B74 /* CoreData */,
+				ABEA90C5240AD71500535B74 /* Convenience Files */,
+				ABEA90C4240AD70200535B74 /* View Cells */,
+				ABEA90C3240AD6EA00535B74 /* Model Controllers */,
+				ABEA90C2240AD6E000535B74 /* View Controllers */,
+				ABEA90B82408946D00535B74 /* Info.plist */,
+			);
+			path = "FoodTruck TrackR";
+			sourceTree = "<group>";
+		};
+		ABEA90C2240AD6E000535B74 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3E43B28E240B12350004A7BF /* signupViewController.swift */,
+				ABEA90AE2408946000535B74 /* LoginViewController.swift */,
+				ABEA910A2414507300535B74 /* TruckTableViewController.swift */,
+				ABEA910C241450A200535B74 /* TruckDetailViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		ABEA90C3240AD6EA00535B74 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3E26A1CF240E26CA00524321 /* CustomerController.swift */,
+				3E26A1D1240E26DC00524321 /* TruckController.swift */,
+				3E26A1D3240E26E100524321 /* GrubFoodController.swift */,
+				3E26A1D5240E26F600524321 /* Models */,
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		ABEA90C4240AD70200535B74 /* View Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Cells";
+			sourceTree = "<group>";
+		};
+		ABEA90C5240AD71500535B74 /* Convenience Files */ = {
+			isa = PBXGroup;
+			children = (
+				ABEA90BE2408A69500535B74 /* Customer+Convenience.swift */,
+				ABEA90C02408C5F000535B74 /* Truck+Convenience.swift */,
+				ABEA90CC240AEE3F00535B74 /* MenuItem+Convenience.swift */,
+				ABEA90CE240AEE6400535B74 /* CustomerRating+Convenience.swift */,
+				ABEA90D0240AEE8600535B74 /* MenuPhoto+Convenience.swift */,
+				3E26A1CD240E26B900524321 /* GrubFood+Convenience.swift */,
+				ABEA90E924107DCD00535B74 /* Location+Convenience.swift */,
+			);
+			path = "Convenience Files";
+			sourceTree = "<group>";
+		};
+		ABEA90C6240AD72900535B74 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				ABEA90C9240AD79800535B74 /* FoodTruck TrackR.xcdatamodeld */,
+				3E26A1CB240E261D00524321 /* CoreDataStack.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		ABEA90C7240AD73800535B74 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ABEA90AA2408946000535B74 /* AppDelegate.swift */,
+				ABEA90AC2408946000535B74 /* SceneDelegate.swift */,
+				ABEA90B32408946D00535B74 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		ABEA90C8240AD75B00535B74 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				ABEA90B02408946000535B74 /* Main.storyboard */,
+				3E43B28C240B11F90004A7BF /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		ABEA90ED2411D38100535B74 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				ABEA90EE2411D39600535B74 /* FoodType.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ABEA90A62408946000535B74 /* FoodTruck TrackR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABEA90BB2408946D00535B74 /* Build configuration list for PBXNativeTarget "FoodTruck TrackR" */;
+			buildPhases = (
+				ABEA90A32408946000535B74 /* Sources */,
+				ABEA90A42408946000535B74 /* Frameworks */,
+				ABEA90A52408946000535B74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FoodTruck TrackR";
+			productName = "FoodTruck TrackR";
+			productReference = ABEA90A72408946000535B74 /* FoodTruck TrackR.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ABEA909F2408946000535B74 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Crus Technologies";
+				TargetAttributes = {
+					ABEA90A62408946000535B74 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = ABEA90A22408946000535B74 /* Build configuration list for PBXProject "FoodTruck TrackR" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ABEA909E2408946000535B74;
+			productRefGroup = ABEA90A82408946000535B74 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ABEA90A62408946000535B74 /* FoodTruck TrackR */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ABEA90A52408946000535B74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E43B28D240B11F90004A7BF /* LaunchScreen.storyboard in Resources */,
+				ABEA90B42408946D00535B74 /* Assets.xcassets in Resources */,
+				ABEA90E6240F5DFB00535B74 /* README.md in Resources */,
+				ABEA90B22408946000535B74 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ABEA90A32408946000535B74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F5EF9592415D294000049FC /* User.swift in Sources */,
+				3E26A1DD240E26F600524321 /* CustomerRepresentation.swift in Sources */,
+				1F5EF9572415D00C000049FC /* Token.swift in Sources */,
+				ABEA90C12408C5F000535B74 /* Truck+Convenience.swift in Sources */,
+				3E26A1D0240E26CA00524321 /* CustomerController.swift in Sources */,
+				ABEA90AF2408946000535B74 /* LoginViewController.swift in Sources */,
+				3E26A1D2240E26DC00524321 /* TruckController.swift in Sources */,
+				ABEA910D241450A200535B74 /* TruckDetailViewController.swift in Sources */,
+				3E26A1D4240E26E100524321 /* GrubFoodController.swift in Sources */,
+				3E43B28F240B12350004A7BF /* signupViewController.swift in Sources */,
+				3E26A1DA240E26F600524321 /* GrubFoodRepresentation.swift in Sources */,
+				3E26A1DC240E26F600524321 /* CustomerRatingsRepresentation.swift in Sources */,
+				ABEA90AB2408946000535B74 /* AppDelegate.swift in Sources */,
+				ABEA90EA24107DCD00535B74 /* Location+Convenience.swift in Sources */,
+				3E26A1DB240E26F600524321 /* TruckRepresentation.swift in Sources */,
+				ABEA90AD2408946000535B74 /* SceneDelegate.swift in Sources */,
+				ABEA910B2414507300535B74 /* TruckTableViewController.swift in Sources */,
+				3E26A1CE240E26B900524321 /* GrubFood+Convenience.swift in Sources */,
+				ABEA90CF240AEE6400535B74 /* CustomerRating+Convenience.swift in Sources */,
+				ABEA90EF2411D39600535B74 /* FoodType.swift in Sources */,
+				3E26A1CC240E261D00524321 /* CoreDataStack.swift in Sources */,
+				ABEA90BF2408A69500535B74 /* Customer+Convenience.swift in Sources */,
+				ABEA90EC24107EF000535B74 /* LocationRepresentation.swift in Sources */,
+				ABEA90CB240AD79800535B74 /* FoodTruck TrackR.xcdatamodeld in Sources */,
+				ABEA90CD240AEE3F00535B74 /* MenuItem+Convenience.swift in Sources */,
+				ABEA90D1240AEE8600535B74 /* MenuPhoto+Convenience.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		ABEA90B02408946000535B74 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ABEA90B12408946000535B74 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ABEA90B92408946D00535B74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ABEA90BA2408946D00535B74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ABEA90BC2408946D00535B74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 46XAGWCJPW;
+				INFOPLIST_FILE = "FoodTruck TrackR/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pravinpatel.FoodTruck-TrackR";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ABEA90BD2408946D00535B74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 46XAGWCJPW;
+				INFOPLIST_FILE = "FoodTruck TrackR/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pravinpatel.FoodTruck-TrackR";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ABEA90A22408946000535B74 /* Build configuration list for PBXProject "FoodTruck TrackR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABEA90B92408946D00535B74 /* Debug */,
+				ABEA90BA2408946D00535B74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABEA90BB2408946D00535B74 /* Build configuration list for PBXNativeTarget "FoodTruck TrackR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABEA90BC2408946D00535B74 /* Debug */,
+				ABEA90BD2408946D00535B74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		ABEA90C9240AD79800535B74 /* FoodTruck TrackR.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ABEA90CA240AD79800535B74 /* FoodTruck TrackR.xcdatamodel */,
+			);
+			currentVersion = ABEA90CA240AD79800535B74 /* FoodTruck TrackR.xcdatamodel */;
+			path = "FoodTruck TrackR.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = ABEA909F2408946000535B74 /* Project object */;
+}
