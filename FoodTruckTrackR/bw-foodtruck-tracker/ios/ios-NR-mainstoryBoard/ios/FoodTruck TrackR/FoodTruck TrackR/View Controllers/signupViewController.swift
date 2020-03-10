@@ -58,6 +58,7 @@ class signupViewController: UIViewController {
                     self.signupButton.isEnabled = true
                     return
                 } else {
+                    self.dismiss(animated: true, completion: nil)
                     self.delegate?.loginAfterSignup(with: LoginRequest(username: username, password: password, email: email))
                 }
             }
@@ -85,7 +86,7 @@ class signupViewController: UIViewController {
         
         URLSession.shared.dataTask(with: request) { data, response, error in
             if let response = response as? HTTPURLResponse,
-                response.statusCode != 200 {
+                response.statusCode != 201 {
                 print(response.statusCode)
                 completion(NSError(domain: "", code: response.statusCode, userInfo: nil))
                 return
@@ -101,6 +102,18 @@ class signupViewController: UIViewController {
                 completion(error)
                 return
             }
+            
+            if let response = response as? HTTPURLResponse,
+                response.statusCode == 201 {
+                print("We have succeeded in signing up")
+                completion(nil)
+                return
+            } else {
+                print("Error signing up: Did not return a response status code of 201")
+                completion(NSError(domain: "", code: -1, userInfo: nil))
+                return
+            }
+            
         }.resume()
     }
 }
